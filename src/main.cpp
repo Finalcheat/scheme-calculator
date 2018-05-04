@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
 {
     std::cout << "Welcome to scheme-calculator" << std::endl;
     std::string s;
-    while (true)
+    while (true && !std::cin.eof())
     {
         std::cout << "> ";
         getline(std::cin, s);
